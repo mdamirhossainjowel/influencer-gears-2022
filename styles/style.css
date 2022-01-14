@@ -1,0 +1,216 @@
+/* common attribiute start */
+body {
+  width: 1440px;
+  height: 3306px;
+  background-color: #ffffff;
+  font-family: "Poppins", sans-serif;
+  margin: 0;
+}
+a {
+  text-decoration: none;
+}
+
+.flexible {
+  display: flex;
+}
+/* common attribute end */
+
+/* -----------------------
+|--Heading Section Start--|
+-------------------------*/
+.nav-section {
+  display: flex;
+}
+.nav-leftside {
+  display: inline-block;
+  margin-left: 120px;
+  margin-top: 87px;
+}
+.main-logo {
+  font-size: 25px;
+  color: rgb(0, 0, 0);
+  font-weight: 600;
+}
+.nav-rightside {
+  display: inline-block;
+  margin-left: 494px;
+  margin-top: 87px;
+  margin-right: 120px;
+}
+.nav-item {
+  margin-left: 25px;
+  color: rgb(0, 0, 0);
+  font-size: 16px;
+  font-weight: 400;
+}
+/* ---------------------
+|--Heading Section End--|
+-----------------------*/
+/* -------------------- */
+/* ---------------------
+|--Main Section Start--|
+-----------------------*/
+.intro-left {
+  width: 60%;
+  margin-left: 120px;
+  margin-top: 80px;
+}
+.intro-heading {
+  font-size: 52px;
+  font-weight: 700px;
+  font-family: "Poppins", sans-serif;
+}
+.link-button {
+  padding: 10px 20px;
+  background-color: rgb(71, 185, 230);
+  color: #ffffff;
+  font-size: 16px;
+  font-weight: 200;
+  border-radius: 25px;
+}
+.intro-right {
+  width: 40%;
+  margin-top: 80px;
+  margin-right: 165px;
+  margin-left: 130px;
+}
+.intro-right img {
+  width: 440px;
+  height: 414px;
+}
+/* ---------------------
+|---Main Section End---|
+-----------------------*/
+/* ----------------------- */
+/* ----------------------------
+|--Company icon Section Start--|
+-----------------------------*/
+.company-icons {
+  margin-top: 100px;
+  margin-left: 165px;
+  margin-right: 165px;
+  display: grid;
+  grid-template-columns: repeat(7, 1fr);
+  justify-content: space-between;
+}
+/* --------------------------
+|--Company icon Section End--|
+---------------------------*/
+/* ---------------------------- */
+/* -------------------------------
+|--Popular Content Section Start--|
+--------------------------------*/
+.content-section {
+  width: 1047px;
+  margin-top: 100px;
+  margin-left: 196px;
+  margin-right: 196px;
+}
+.content-section-heading {
+  text-align: center;
+}
+.content-container {
+  margin-top: 30px;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 30px;
+}
+.content {
+  width: 329px;
+  height: 476px;
+}
+.content-img {
+  width: 300px;
+  height: 256px;
+  border-radius: 5px;
+  margin: 5px;
+}
+.content-heading {
+  margin-left: 5px;
+  margin-top: 0px;
+  margin-bottom: 0px;
+}
+.price {
+  margin-left: 5px;
+  margin-top: 5px;
+  margin-bottom: 0%;
+}
+.viewer-rating {
+  margin-left: 5px;
+  margin-top: 5px;
+  margin-bottom: 0%;
+}
+.star-icon {
+  color: rgb(233, 83, 24);
+}
+.rating {
+  margin-left: 10px;
+}
+.content-details {
+  margin-top: 5px;
+  margin-left: 5px;
+}
+.more {
+  text-align: right;
+  margin-right: 5px;
+}
+.seemore-button {
+  color: rgb(71, 185, 230);
+  font-size: 16px;
+  font-weight: 200;
+}
+/* --------------------------
+|--Company icon Section EnD--|
+---------------------------*/
+/* ----------------------
+|--Extra Section Start--|
+----------------------*/
+.Extra-section {
+  width: 1047px;
+  margin-top: 100px;
+  margin-left: 196px;
+  margin-right: 196px;
+}
+.Extra-section-heading {
+  text-align: center;
+  font-size: 40px;
+  font-weight: 700;
+}
+.Team-Section {
+  margin-top: 100px;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  justify-content: space-between;
+}
+.review-card {
+  width: 300px;
+}
+.team-image {
+  padding: 10px;
+  height: 280px;
+  width: 280px;
+}
+.reviwer-name {
+  text-align: center;
+}
+/* --------------------
+|--Extra Section EnD--|
+--------------------*/
+/* -------------------- */
+/* ---------------------
+|--Footer Section Start-|
+----------------------*/
+.footer-section {
+  margin-top: 100px;
+  background-color: rgb(1, 1, 24);
+  color: #ffffff;
+  text-align: center;
+  padding: 50px;
+}
+.icon {
+  height: 25px;
+  width: 25px;
+}
+/* --------------------
+|--Footer Section EnD--|
+--------------------*/
