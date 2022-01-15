@@ -121,7 +121,7 @@ a {
   margin-left: 60px;
   width: 80%;
   height: 2px;
-  background-image: radial-gradient(#ccc, #fff), radial-gradient(#ccc, #fff);
+  background-image: radial-gradient(rgba(204, 204, 204, 0.686), rgba(255, 255, 255, 0.186));
   background-position: 0, 100%, 0, 100%;
 }
 .company-icons img:hover {
