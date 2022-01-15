@@ -60,6 +60,9 @@ a {
   font-weight: 700px;
   font-family: "Poppins", sans-serif;
 }
+.intro-para {
+  text-align: justify;
+}
 .link-button {
   padding: 10px 20px;
   background-color: rgb(71, 185, 230);
@@ -161,7 +164,7 @@ a {
   transition: transform 0.1s ease-in 1s;
 }
 .content:hover {
-  transform: scale(1.2);
+  transform: scale(1.1);
 }
 .content-img {
   width: 300px;
@@ -191,6 +194,10 @@ a {
 .rating {
   margin-left: 10px;
 }
+.flexible-rating {
+  display: flex;
+  flex-direction: row;
+}
 .content-details {
   margin-top: 5px;
   margin-left: 15px;
@@ -204,9 +211,9 @@ a {
   font-size: 16px;
   font-weight: 200;
 }
-/* --------------------------
-|--Company icon Section EnD--|
----------------------------*/
+/* -----------------------------
+|--Popular Content Section EnD--|
+------------------------------*/
 /* ----------------------
 |--Extra Section Start--|
 ----------------------*/
@@ -272,16 +279,17 @@ a {
 /* -----------------------------
 |--Media Query For Mobile View--|
 -------------------------------*/
-@media only screen and (max-width: 480px) {
+@media only screen and (max-width: 576px) {
   body {
     width: 100%;
-    background-color: lightblue;
   }
 
   /* -----------------------
 |--Heading Section Start--|
 -------------------------*/
-
+  .heading-section {
+    width: auto;
+  }
   .nav-leftside {
     display: inline-block;
 
@@ -305,56 +313,275 @@ a {
   .flexible {
     display: flex;
     flex-direction: column;
-    -ms-flex-order: calc(1);
+  }
+  .intro-section {
+    width: auto;
   }
 
   .intro-left {
-    width: 50%;
-    margin-left: 50px;
-    margin-top: 80px;
+    width: auto;
+    margin-left: 10px;
+    margin-top: 40px;
+    text-align: center;
+    order: 2;
   }
   .intro-heading {
     font-size: 30px;
     font-weight: 700px;
-    font-family: "Poppins", sans-serif;
   }
-  .link-button {
-    padding: 10px 20px;
-    background-color: rgb(71, 185, 230);
-    color: #ffffff;
-    font-size: 16px;
-    font-weight: 200;
-    border-radius: 25px;
+  .intro-para {
+    padding-left: 5px;
+    padding-right: 5px;
   }
+
   .intro-right {
-    width: 50%;
-    margin-top: 80px;
-    /* margin-right: 10px; */
-    margin-left: 100px;
+    margin-left: 70px;
+    text-align: center;
+    order: 1;
   }
   .bacground {
-    position: absolute;
-    width: 300px;
-    height: 300px;
-    background-color: rgba(255, 127, 80, 0.152);
-    border-radius: 50%;
-    /* margin: 65px; */
-    margin-top: 65px;
-    margin-left: 70px;
+    width: 180px;
+    height: 180px;
+    margin-top: 35px;
+    margin-left: 30px;
     margin-bottom: 70px;
+    background-color: rgba(0, 0, 0, 0.152);
   }
   .intro-right img {
-    position: relative;
-    width: 440px;
-    height: 414px;
-    border-radius: 50%;
-    border: 2px solid rgba(232, 226, 226, 0.227);
-    transition: transform 0.1s ease-in 1s;
+    width: 250px;
+    height: 250px;
   }
-  .intro-right:hover {
-    transform: scale(1.2);
-  }
+
   /* ---------------------
 |---Main Section End---|
 -----------------------*/
+
+  /* ----------------------------
+|--Company icon Section Start--|
+-----------------------------*/
+  .company-icon-section {
+    width: 80%;
+    margin-top: 50px;
+    margin-left: 15px;
+    margin-right: 10px;
+    text-align: center;
+  }
+  .company-icons {
+    margin-top: 40px;
+    margin-bottom: 40px;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+
+    grid-gap: 25px;
+    justify-content: stretch;
+  }
+  .company-icons img {
+    height: 55px;
+    width: 75px;
+  }
+  .border {
+    margin-left: 25px;
+    width: 80%;
+    height: 2px;
+    background-image: radial-gradient(
+      rgba(209, 209, 209, 0.686),
+      rgba(209, 206, 206, 0.186)
+    );
+    background-position: 0, 100%, 0, 100%;
+  }
+
+  /* --------------------------
+|--Company icon Section End--|
+---------------------------*/
+
+  /* -------------------------------
+|--Popular Content Section Start--|
+--------------------------------*/
+  .content-section {
+    width: auto;
+    margin-top: 50px;
+    margin-left: 20px;
+    margin-right: 20px;
+  }
+  .content-section-heading {
+    width: auto;
+    text-align: center;
+  }
+  .content-container {
+    width: auto;
+    margin-top: 30px;
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+  }
+  .content {
+    width: 329px;
+    height: 450px;
+    margin-left: 25px;
+  }
+
+  .content-img {
+    width: 280px;
+    height: 240px;
+  }
+
+  .flexible-rating {
+    display: flex;
+    flex-direction: row;
+  }
+  .rating {
+    margin-left: 5px;
+  }
+
+  .more {
+    text-align: center;
+  }
+  .seemore-button {
+    color: rgb(71, 185, 230);
+    font-size: 16px;
+    font-weight: 200;
+  }
+  /* -----------------------------
+|--Popular Content Section EnD--|
+------------------------------*/
+  /* ----------------------
+|--Extra Section Start--|
+----------------------*/
+  .Extra-section {
+    width: auto;
+    margin-top: 50px;
+    margin-left: 20px;
+    margin-right: 20px;
+  }
+  .Team-Section {
+    margin-left: 30px;
+    margin-top: 100px;
+    display: flex;
+    flex-direction: column;
+  }
+  /* --------------------
+|--Extra Section EnD--|
+--------------------*/
+
+  /* ---------------------
+|--Footer Section Start-|
+----------------------*/
+
+  /* --------------------
+|--Footer Section EnD--|
+--------------------*/
+}
+
+/* -----------------------------
+|--Media Query For Tablet View--|
+-------------------------------*/
+@media only screen and (min-width: 577px) and (max-width: 768px) {
+  body {
+    width: 100%;
+    margin: 0%;
+  }
+
+  /* -----------------------
+|--Heading Section Start--|
+-------------------------*/
+
+  .nav-rightside {
+    display: none;
+  }
+
+  /* ---------------------
+|--Heading Section End--|
+-----------------------*/
+  /* ---------------------
+|--Main Section Start--|
+-----------------------*/
+  .intro-left {
+    width: 60%;
+    margin-left: 50px;
+    margin-top: 80px;
+    margin-right: 5px;
+  }
+  .intro-right {
+    width: 40%;
+    margin-top: 120px;
+    margin-right: 80px;
+    margin-left: 85px;
+  }
+
+  /* ---------------------
+|---Main Section End---|
+-----------------------*/
+
+  /* ----------------------------
+|--Company icon Section Start--|
+-----------------------------*/
+  .company-icon-section {
+    width: 60%;
+    margin-top: 100px;
+    margin-left: 50px;
+    margin-right: 20px;
+  }
+  .company-icons {
+    grid-gap: 5%;
+  }
+  /* --------------------------
+|--Company icon Section End--|
+---------------------------*/
+
+  /* -------------------------------
+|--Popular Content Section Start--|
+--------------------------------*/
+  .content-section {
+    width: auto;
+    margin-top: 100px;
+    margin-left: 50px;
+    margin-right: 50px;
+  }
+  .content-section-heading {
+    text-align: center;
+  }
+  .content-container {
+    width: auto;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    justify-content: space-between;
+  }
+  .flexible-rating {
+    display: flex;
+    flex-direction: row;
+  }
+  /* -----------------------------
+|--Popular Content Section EnD--|
+------------------------------*/
+
+  /* ----------------------
+|--Extra Section Start--|
+----------------------*/
+  .Extra-section {
+    width: auto;
+    margin-top: 50px;
+    margin-left: 50px;
+    margin-right: 50px;
+  }
+  .Team-Section {
+    margin-top: 50px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    justify-content: space-between;
+  }
+  /* --------------------
+|--Extra Section EnD--|
+--------------------*/
+
+  /* ---------------------
+|--Footer Section Start-|
+----------------------*/
+
+  .footer-section {
+    width: 100%;
+    height: auto;
+  }
+  /* --------------------
+|--Footer Section EnD--|
+--------------------*/
 }
