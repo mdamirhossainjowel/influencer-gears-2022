@@ -1,7 +1,7 @@
 /* common attribiute start */
 body {
-  width: 1440px;
-  height: 3306px;
+  width: 100%;
+  /* height: 3306px; */
   background-color: #ffffff;
   font-family: "Poppins", sans-serif;
   margin: 0;
@@ -23,7 +23,7 @@ a {
 }
 .nav-leftside {
   display: inline-block;
-  margin-left: 120px;
+  margin-left: 100px;
   margin-top: 87px;
 }
 .main-logo {
@@ -33,12 +33,12 @@ a {
 }
 .nav-rightside {
   display: inline-block;
-  margin-left: 494px;
+  margin-left: 470px;
   margin-top: 87px;
-  margin-right: 120px;
+  margin-right: 100px;
 }
 .nav-item {
-  margin-left: 25px;
+  margin-left: 20px;
   color: rgb(0, 0, 0);
   font-size: 16px;
   font-weight: 400;
@@ -52,11 +52,11 @@ a {
 -----------------------*/
 .intro-left {
   width: 60%;
-  margin-left: 120px;
+  margin-left: 100px;
   margin-top: 80px;
 }
 .intro-heading {
-  font-size: 52px;
+  font-size: 50px;
   font-weight: 700px;
   font-family: "Poppins", sans-serif;
 }
@@ -71,12 +71,30 @@ a {
 .intro-right {
   width: 40%;
   margin-top: 80px;
-  margin-right: 165px;
-  margin-left: 130px;
+  margin-right: 150px;
+  margin-left: 165px;
+}
+.bacground {
+  position: absolute;
+  width: 300px;
+  height: 300px;
+  background-color: rgba(255, 127, 80, 0.152);
+  border-radius: 50%;
+  /* margin: 65px; */
+  margin-top: 65px;
+  margin-left: 70px;
+  margin-bottom: 70px;
 }
 .intro-right img {
+  position: relative;
   width: 440px;
   height: 414px;
+  border-radius: 50%;
+  border: 2px solid rgba(232, 226, 226, 0.227);
+  transition: transform 0.1s ease-in 1s;
+}
+.intro-right:hover {
+  transform: scale(1.2);
 }
 /* ---------------------
 |---Main Section End---|
@@ -85,13 +103,29 @@ a {
 /* ----------------------------
 |--Company icon Section Start--|
 -----------------------------*/
-.company-icons {
+.company-icon-section {
   margin-top: 100px;
-  margin-left: 165px;
-  margin-right: 165px;
+  margin-left: 140px;
+  margin-right: 140px;
+}
+.company-icons {
+  margin-top: 40px;
+  margin-bottom: 40px;
   display: grid;
   grid-template-columns: repeat(7, 1fr);
   justify-content: space-between;
+  transition: transform 2s ease-in 1s;
+  /* transition-timing-function: ease-in; */
+}
+.border {
+  margin-left: 60px;
+  width: 80%;
+  height: 2px;
+  background-image: radial-gradient(#ccc, #fff), radial-gradient(#ccc, #fff);
+  background-position: 0, 100%, 0, 100%;
+}
+.company-icons img:hover {
+  transform: scale(1.5);
 }
 /* --------------------------
 |--Company icon Section End--|
@@ -103,8 +137,8 @@ a {
 .content-section {
   width: 1047px;
   margin-top: 100px;
-  margin-left: 196px;
-  margin-right: 196px;
+  margin-left: 150px;
+  margin-right: 150px;
 }
 .content-section-heading {
   text-align: center;
@@ -118,25 +152,33 @@ a {
 .content {
   width: 329px;
   height: 476px;
+  border-radius: 15px;
+  border: 2px solid rgba(128, 128, 128, 0.049);
+  background-color: white;
+  transition: transform 0.1s ease-in 1s;
+}
+.content:hover {
+  transform: scale(1.2);
 }
 .content-img {
   width: 300px;
   height: 256px;
   border-radius: 5px;
-  margin: 5px;
+  margin-top: 10px;
+  margin-left: 15px;
 }
 .content-heading {
-  margin-left: 5px;
+  margin-left: 15px;
   margin-top: 0px;
   margin-bottom: 0px;
 }
 .price {
-  margin-left: 5px;
+  margin-left: 15px;
   margin-top: 5px;
   margin-bottom: 0%;
 }
 .viewer-rating {
-  margin-left: 5px;
+  margin-left: 15px;
   margin-top: 5px;
   margin-bottom: 0%;
 }
@@ -148,7 +190,7 @@ a {
 }
 .content-details {
   margin-top: 5px;
-  margin-left: 5px;
+  margin-left: 15px;
 }
 .more {
   text-align: right;
@@ -166,10 +208,9 @@ a {
 |--Extra Section Start--|
 ----------------------*/
 .Extra-section {
-  width: 1047px;
   margin-top: 100px;
-  margin-left: 196px;
-  margin-right: 196px;
+  margin-left: 160px;
+  margin-right: 160px;
 }
 .Extra-section-heading {
   text-align: center;
@@ -184,14 +225,25 @@ a {
 }
 .review-card {
   width: 300px;
+  border: 2px solid rgba(0, 0, 0, 0.049);
+  border-radius: 25px;
+  transition: transform 0.1s ease-in 1s;
 }
 .team-image {
   padding: 10px;
   height: 280px;
   width: 280px;
 }
+.review-card:hover {
+  transform: scale(1.2);
+}
+
 .reviwer-name {
   text-align: center;
+}
+.review {
+  padding: 10px;
+  text-align: justify;
 }
 /* --------------------
 |--Extra Section EnD--|
