@@ -279,7 +279,7 @@ a {
 /* -----------------------------
 |--Media Query For Mobile View--|
 -------------------------------*/
-@media only screen and (max-width: 576px) {
+@media only screen and (max-width: 688px) {
   body {
     width: 100%;
   }
@@ -326,12 +326,13 @@ a {
     order: 2;
   }
   .intro-heading {
-    font-size: 30px;
+    font-size: 15px;
     font-weight: 700px;
   }
   .intro-para {
-    padding-left: 5px;
-    padding-right: 5px;
+    font-size: 12px;
+    padding-left: 15px;
+    padding-right: 15px;
   }
 
   .intro-right {
@@ -373,7 +374,7 @@ a {
     grid-template-columns: repeat(4, 1fr);
 
     grid-gap: 25px;
-    justify-content: stretch;
+    justify-content: center;
   }
   .company-icons img {
     height: 55px;
@@ -412,7 +413,7 @@ a {
     margin-top: 30px;
     display: flex;
     flex-direction: column;
-    align-content: center;
+    justify-content: center;
   }
   .content {
     width: 329px;
@@ -475,7 +476,7 @@ a {
 /* -----------------------------
 |--Media Query For Tablet View--|
 -------------------------------*/
-@media only screen and (min-width: 577px) and (max-width: 768px) {
+@media only screen and (min-width: 689px) and (max-width: 992px) {
   body {
     width: 100%;
     margin: 0%;
